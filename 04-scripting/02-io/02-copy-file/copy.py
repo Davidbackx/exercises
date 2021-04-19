@@ -1,10 +1,10 @@
 import sys
+import shutil
 
-#with open(" ".join(sys.argv[2:3]),'r') as copyfile
-#with open(" ".join(sys.arv[4:5]),'r') as destination
-#copy2(data,destination)
-#print(b.txt)
+source = sys.argv[1]
+destination = sys.argv[2]
+with open('D:\\School\\Semester 2\\Script talen\\04-scripting\\02-io\\02-copy-file\\a','r') as copyfile:
+    with open('D:\\School\\Semester 2\\Script talen\\04-scripting\\02-io\\02-copy-file\\b','w') as destinationfile:
+        shutil.copy2(copyfile,destinationfile)
+        #destinationfile.write(copyfile.read())
 
-with open(sys.argv[2:3], 'r') as input:
-    with open(sys.argv[4:5], 'w') as output:
-        output.write(input.read())
